@@ -27,7 +27,7 @@ function Canvas() {
             {pixels.map((color: PixelColorType, index) => (
                 <Pixel
                     // eslint-disable-next-line react/no-array-index-key
-                    key={}
+                    key={index}
                     onClick={() => dispatch(fillPixel(index))}
                     color={color}
                 />
